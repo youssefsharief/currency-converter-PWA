@@ -23,7 +23,6 @@ export const EnhancedForm = withFormik({
 					props.resultReceived(rate, values.amount, values.startCurrency, values.endCurrency)
 					setSubmitting(false)
 				}).catch(err => {
-					console.log(err)
 					setSubmitting(false)
 				})
 			} else {
@@ -33,7 +32,7 @@ export const EnhancedForm = withFormik({
 				})
 			}
 		}).catch(err => {
-			console.log('eeee', err)
+			
 		})
 
 	},

@@ -15,12 +15,6 @@ export default function register() {
       const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
       if (isLocalhost) {
         checkValidServiceWorker(swUrl);
-        navigator.serviceWorker.ready.then(() => {
-          console.log(
-            'This web app is being served cache-first by a service ' +
-              'worker. To learn more, visit https://goo.gl/SC7cgQ'
-          );
-        });
       } else {
         registerValidSW(swUrl);
       }
@@ -49,9 +43,6 @@ function checkValidServiceWorker(swUrl) {
       }
     })
     .catch(() => {
-      console.log(
-        'No internet connection found. App is running in offline mode.'
-      );
     });
 }
 
